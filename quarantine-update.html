@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+HPI - Administration Database
+</title>
+<!-- <link rel="stylesheet" type="text/css" href="pak-style.css"> -->
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+  *{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  }
+  body {
+    background-color: #fafdfe;
+  font-family: 'Roboto', sans-serif;
+  }
+
+  /* *
+  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    text-decoration: none;
+  } */
+  header li, a, button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  header {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .topnavbar {
+    padding: 12px 25px;
+    background-color: rgb(133, 124, 133);
+    border: none;
+    border-radius: 10px;
+  }
+  .header-logo {
+    cursor: pointer;
+  }
+  .nav_links {
+    list-style: none;
+    margin-right: 500px;
+  }
+  .nav_links li {
+    display: block;
+    float: left;
+  }
+  .nav_links li a {
+    padding: 9px 25px;
+    background-color: rgb(133, 124, 133);
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+  }
+  .nav-links li a:hover {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  header button {
+    margin-right: 100px;
+    padding: 9px 25px;
+    background-color: rgba(13, 159, 195, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+  }
+  button:hover {
+    background-color: rgba(13, 159, 195, 0.8);
+  }
+  .navbar-2
+  {
+    margin-left: 22%;
+    top: 50%;
+    left: 50%;
+    list-style: none;
+  }
+  .navbar-2 ul
+  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  .navbar-2 li
+  {
+    background-color: #323030;
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+  .navbar-2 li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: .4s;
+  }
+  .navbar-2 li a:hover
+  {
+    background-color: #201f1f;
+    font-weight: 550;
+  }
+  .active-sub
+  {
+    background-color: #201f1f;
+    font-weight: 550;
+  }
+
+  .sidebar {
+  position: fixed;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  background: #042331 !important;
+  transition: all .5s ease;
+  }
+  .sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146 !important;
+  user-select: none;
+  }
+  .sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+  }
+  .sidebar ul a i{
+  margin-right: 16px;
+  }
+  .sidebar ul a:hover
+  {
+    font-weight: 700;
+  }
+  .active-ul
+  {
+    font-weight: 700;
+  }
+  .Form-section h2
+  {
+    font-style: "Roboto", Arial;
+    margin-top: 10px;
+    margin-left: 22%;
+    color: rgb(3, 3, 2);
+  }
+  header li a:hover {
+    font-weight: bold;
+    color: rgb(191, 183, 183);
+  }
+  hr
+  {
+    border: none;
+    align-self: center;
+    margin-left: 22%;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+    width: 50%;
+    height: 3px;
+    background: #000000;
+  }
+  form {
+    margin: 20px auto auto 22%;
+    width: 950px;
+    color: steelblue;
+  }
+  input {
+    padding: 8px;
+    font-size: inherit;
+
+  }
+  input[type="text"]
+  {
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid steelblue;
+    background: white;
+  }
+  .gender-type
+  {
+    padding: 8px;
+    font-size: inherit;
+    display: inline-block;
+    margin-bottom: 25px;
+    width: 50%;
+    border: 2px solid steelblue;
+    background: LightYellow;
+    float: right;
+    position: relative;
+    background: white;
+  }
+  .gender-type-first
+  {
+    padding: 8px;
+    font-size: inherit;
+    display: inline-block;
+    margin-bottom: 25px;
+    width: 47%;
+    border: 2px solid steelblue;
+    background: LightYellow;
+    float: left;
+    position: relative;
+    background: white;
+
+  }
+  .first
+  {
+    display: inline-block;
+    width: 45% !important;
+    position: relative !important;
+    float: left !important;
+  }
+  .third
+  {
+    width: 98% !important;
+  }
+  .second
+  {
+    display: inline-block;
+    width: 48% !important;
+    position: relative !important;
+    float: right !important;
+  }
+  input[type="submit"]
+  {
+    width: 244px;
+    height: 45px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 705px;
+    background: steelblue;
+    color: white;
+  }
+  input[type="text"]:hover{
+    background: LightYellow;
+  }
+  input[type="text"]:focus{
+    background: LightYellow;
+  }
+  .gender-type:hover, .gender-type-first:hover
+  {background: LightYellow;}
+
+
+
+
+  </style>
+
+  <header>
+  <img class = "header-logo" src="logo.png" width = "300" height = "125">
+<nav class = "topnavbar">
+<ul class ="nav_links">
+  <li><a  href="Home.html">HOME</a></li>
+  <li><a href="pak-stats.html">STATISTICS</a></li>
+  <li><a href="Contact.html">CONTACT</a></li>
+</ul>
+</nav>
+</header>
+<br>
+<div class="sidebar">
+<ul>
+<li><a href="patient-add.html"><i class="fas fa-user-injured"></i>Patient</a></li>
+<li><a href="doctor-add.html"><i class="fas fa-user-md"></i>Doctor</a></li>
+<li><a href="quarantine-add.html"><i class="fas fa-building"></i>Quarantine Ward</a></li>
+<li class= "active-ul"><a href="isolation-add.html"><i class="fas fa-procedures"></i>Isolation Ward</a></li>
+<li><a href="logs.html"><i class="fas fa-server"></i>Logs</a></li>
+</ul>
+</div>
+
+<section class ="Form-section">
+  <div class="navbar-2">
+    <ul>
+      <li><a href="quarantine-add.html">Add Record</a></li>
+      <li><a href="quarantine-delete.html">Delete Record</a></li>
+      <li><a class="active-sub" href="quarantine-update.html">Update Record</a>
+      <li><a href="quarantine-display.html">Search Record</a>
+    </ul>
+  </div>
+  <br><br>
+  <h2>Update Quarantine Record</h2>
+  <hr>
+
+  <form id="form1" name="form1" method="POST" action="">
+
+  <input type="text" name="id" class = "first" placeholder="Quarantine ID">
+  <input type="text" name="province" class = "second" placeholder= "Center Province">
+  <input type="text" name="city"class = "first" placeholder="Center City">
+  <input type="text" name="location" class = "second" placeholder= "Center Location">
+  <input type="text" name="s_id"class = "first" placeholder="Center Supervisor ID">
+  <input type="text" name="beds" class = "second" placeholder= "Total Beds">
+  <input type="submit" name="submit" value="Update Record">
+
+  </form>
+</section>
+
+
+  </body>
+</html>
+
+
+

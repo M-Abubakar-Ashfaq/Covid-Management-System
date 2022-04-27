@@ -1,0 +1,611 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+
+
+
+
+/*CODE STARTS FROM HERE */
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  text-decoration: none;
+}
+body
+{
+  background-color: rgb(255, 255, 255);
+}
+header li, a, button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.index-banner button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+header {
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.topnavbar {
+  padding: 12px 25px;
+  background-color: rgb(133, 124, 133);
+  border: none;
+  border-radius: 10px;
+}
+.header-logo {
+  cursor: pointer;
+}
+.nav_links {
+  list-style: none;
+  margin-right: 500px;
+}
+.nav_links li {
+  display: block;
+  float: left;
+}
+.nav_links li a {
+  padding: 9px 25px;
+  background-color: rgb(133, 124, 133);
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+}
+.nav-links li a:hover {
+  font-weight: bold;
+  font-size: 22px;
+}
+header button {
+  margin-right: 100px;
+  padding: 9px 25px;
+  background-color: rgba(13, 159, 195, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+  }
+header button:hover {
+    background-color: rgba(13, 159, 195, 0.8);
+  }
+.active {
+    font-weight: bold;
+    font-size: 22px;
+}
+.index-banner  button {
+  margin-right: 100px;
+  padding: 19px 45px;
+  background-color: rgba(21, 180, 2, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 250px;
+  transition: all 0.4s ease 0s;
+}
+.index-banner button:hover {
+  background-color: rgba(21, 180, 2, 0.8);
+}
+.index-banner
+{
+  width: 100%;
+  height: calc(100vh - 300px);
+  background-image: url("../images/main.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  display: table;
+}
+.vertical-center
+{
+  display: table-cell;
+  vertical-align: middle;
+}
+.index-banner h2
+{
+  font-family: 'Catamaran', sans-serif;
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 100px;
+  color: #fefffe;
+  margin-left: 60px;
+  margin-bottom: 50px;
+  text-align: left;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.BorderBox
+{
+  width: 1000px;
+  height: 300px;
+  margin-top: 50px;
+  margin-left: 140px;
+  border-radius: 15px;
+}
+.confirmedcases button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.confirmedcases button {
+  margin-top: 10px;
+  margin-right: 100px;
+  padding: -10px -10px;
+  width: 80%;
+  height: 25%;
+  background-color: rgba(21, 180, 2, 1);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: all 0.4s ease 0s;
+}
+.confirmedcases button:hover {
+  background-color: rgba(21, 180, 2, 0.8);
+}
+.confirmedcases
+{
+  margin-top:40px;
+  margin-left: 30px;
+  width: 300px;
+  height: 220px;
+  text-align: center;
+  border-radius: 10px;
+  /* padding: 50px;*/
+}
+.confirmedcases h2
+{
+  float: left;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-family: 'Baloo Bhaina 2', cursive;
+  font-size: 22px;
+}
+.confirmedcases h3
+{
+  float: left;
+  margin-top: -5px;
+  margin-left: 25px;
+  font-family: 'Baloo Bhaina 2', cursive;
+font-size: 25px;
+}
+.confirmecases h1
+{
+  margin-left: 5px;
+  height: 100%;
+  font-family: 'Baloo Bhaina 2', cursive;
+  font-size: 20px;
+}
+.activecases
+{
+  margin-top:-222px;
+  margin-left: 380px;
+  width: 200px;
+  background-color: #edf2f7;
+  height: 120px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  /* padding: 50px;*/
+}
+.activecases .inside-box
+{
+  width: 100%;
+  height: 30%;
+  background-color: rgba(223, 228, 233, 0.8);
+  margin-top: 31px;
+  border-radius: 0px 0px 10px 10px;
+}
+.activecases h3
+{
+  text-align: center;
+  padding-top: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: rgb(116, 116, 115);
+  letter-spacing: 3px;
+}
+.activecases h4
+{
+  word-spacing: 3px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  font-weight: 1500;
+  font-family: 'Baloo Bhaina 2', cursive;
+  letter-spacing: 1px;
+  padding-top: 10px;
+  color: #777a80;
+}
+.new_cases
+{
+  margin-top: 25px;
+  margin-left: 380px;
+  width: 200px;
+  background-color: #edf2f7;
+  height: 120px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  /* padding: 50px;*/
+}
+.new_cases .inside-box
+{
+  width: 100%;
+  height: 30%;
+  background-color: rgba(223, 228, 233, 0.8);
+  margin-top: 31px;
+  border-radius: 0px 0px 10px 10px;
+}
+.new_cases h3
+{
+  text-align: center;
+  padding-top: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: rgb(116, 116, 115);
+  letter-spacing: 3px;
+}
+.new_cases h4
+{
+  word-spacing: 3px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  font-weight: 1500;
+  font-family: 'Baloo Bhaina 2', cursive;
+  letter-spacing: 1px;
+  padding-top: 10px;
+  color: #777a80;
+}
+.recoveries
+{
+  margin-top:-122px;
+  margin-left: 620px;
+  width: 200px;
+  height: 120px;
+  border: 1px solid lightgrey;
+   background-color:#f0fff4;
+  border-radius: 10px;
+  /* padding: 50px;*/
+}
+.recoveries .inside-box
+{
+  width: 100%;
+  height: 30%;
+  background-color: rgba(56, 161, 105, 0.2);
+  margin-top: 31px;
+  border-radius: 0px 0px 10px 10px;
+}
+.recoveries h3
+{
+  text-align: center;
+  padding-top: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: #269d43;
+  letter-spacing: 3px;
+}
+.recoveries h4
+{
+  word-spacing: 3px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  font-weight: 1500;
+  font-family: 'Baloo Bhaina 2', cursive;
+  letter-spacing: 1px;
+  padding-top: 10px;
+  color: #269d43;
+}
+.new_recovered
+{
+  margin-top: -122px;
+  margin-left: 620px;
+  width: 200px;
+  height: 120px;
+  border: 1px solid lightgrey;
+   background-color:#f0fff4;
+  border-radius: 10px;
+  /* padding: 50px;*/
+}
+.new_recovered .inside-box
+{
+  width: 100%;
+  height: 30%;
+  background-color: rgba(56, 161, 105, 0.2);
+  margin-top: 31px;
+  border-radius: 0px 0px 10px 10px;
+}
+.new_recovered h3
+{
+  text-align: center;
+  padding-top: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: #269d43;
+  letter-spacing: 3px;
+}
+.new_recovered h4
+{
+  word-spacing: 3px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  font-weight: 1500;
+  font-family: 'Baloo Bhaina 2', cursive;
+  letter-spacing: 1px;
+  padding-top: 10px;
+  color: #269d43;
+}
+.deaths
+{
+  margin-top:-122px;
+  margin-left: 855px;
+  width: 200px;
+  height: 120px;
+  border: 1px solid lightgrey;
+  background-color:#fff5f5;
+  border-radius: 10px;
+  /* padding: 50px;*/
+}
+.deaths .inside-box
+{
+  width: 100%;
+  height: 30%;
+  background-color: rgba(230, 62, 62, 0.2);
+  margin-top: 31px;
+  border-radius: 0px 0px 10px 10px;
+}
+.deaths h3
+{
+  text-align: center;
+  padding-top: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: #e53e3e;
+  letter-spacing: 3px;
+}
+.deaths h4
+{
+  word-spacing: 3px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  font-weight: 1500;
+  font-family: 'Baloo Bhaina 2', cursive;
+  letter-spacing: 1px;
+  padding-top: 10px;
+  color: #e53e3e;
+}
+.new_deaths
+{
+  margin-top:-122px;
+  margin-left: 855px;
+  width: 200px;
+  height: 120px;
+  border: 1px solid lightgrey;
+  background-color:#fff5f5;
+  border-radius: 10px;
+  /* padding: 50px;*/
+}
+.new_deaths .inside-box
+{
+  width: 100%;
+  height: 30%;
+  background-color: rgba(230, 62, 62, 0.2);
+  margin-top: 31px;
+  border-radius: 0px 0px 10px 10px;
+}
+.new_deaths h3
+{
+  text-align: center;
+  padding-top: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: #e53e3e;
+  letter-spacing: 3px;
+}
+.new_deaths h4
+{
+  word-spacing: 3px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  font-weight: 1500;
+  font-family: 'Baloo Bhaina 2', cursive;
+  letter-spacing: 1px;
+  padding-top: 10px;
+  color: #e53e3e;
+}
+.Boxx
+{
+  text-align: center;
+  font-size: 20px;
+}
+hr {
+  border: none;
+  align-self: left;
+  margin-left: 5%;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+  width: 75%;
+  height: 3px;
+  background: #000000;
+}
+.Symptoms h3 {
+  margin-right: 5%;
+  font-size: 40px;
+  font-family: 'Catamaran', monospace;
+  word-spacing: 10px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  text-align: center;
+  display: block;
+  background-image: linear-gradient(135deg, #962305 0%, #f93a19 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.precautions h3 {
+  margin-right: 5%;
+  font-size: 40px;
+  font-family: 'Catamaran', monospace;
+  word-spacing: 10px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  text-align: center;
+  display: block;
+  background-image: linear-gradient(135deg, #05710d 0%, #35f542 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.spread h3 {
+  margin-right: 5%;
+  font-size: 40px;
+  font-family: 'Catamaran', monospace;
+  word-spacing: 10px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  text-align: center;
+  display: block;
+  background-image: linear-gradient(135deg, #07796b 0%, #18e8f5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.confirmedcases h1 {
+  font-size: 80px; font-weight: 800; margin-top: 50px; text-align: center; font-family: 'Baloo Bhaina 2', cursive; line-height: 0.9; color: #67336e; letter-spacing: 8px;
+}
+footer
+{
+  width: calc(100%);
+  padding: 40px 40px;
+  background-color: #111;
+  margin-top: 20px;
+}
+
+footer p
+{
+  color: rgb(250, 250, 250);
+  font-family: 'Catamaran', sans-serif;
+  text-align: center;
+}

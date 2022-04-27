@@ -1,0 +1,96 @@
+
+.icontainer {
+    padding:50px;
+  }
+  
+  #sub
+  {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+  
+    border: none;
+    cursor: pointer;
+    width: 35%;
+  }
+  #sub:hover {
+    opacity: 0.8;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .centered
+  {
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .icontainer {
+  
+      right: 0;
+      margin-left: 225px;
+      max-width: 900px;
+      background-color: white;
+      border: 3px solid #1234;
+      border-radius: 10px;
+      height: 600px;
+  
+  
+  
+  }
+  
+  
+  input[type=text], input[type=password] {
+    width: 280px;
+    padding: 15px;
+    /*margin: 5px 0 22px 0;*/
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus
+  {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  input[type=email] {
+    width: 280px;
+    padding: 15px;
+    /*margin: 5px 0 22px 0;*/
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=number] {
+    width: 280px;
+    padding: 15px;
+    /*margin: 5px 0 22px 0;*/
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .serif {
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    margin-right:40px;
+    margin-bottom: 80px;
+    font-size: 40px;
+    color: black;
+  }
+  .new
+  {
+  
+  
+    margin-top: 30px;
+
+  
+  }
+  #pw{
+  
+    margin-left: 400px;
+    
+    
+  }

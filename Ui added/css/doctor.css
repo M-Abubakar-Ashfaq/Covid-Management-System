@@ -241,12 +241,19 @@ input[type="text"]
 }
 .third
 {
-  width: 98% !important;
+  width: 45% !important;
 }
 .second
 {
   display: inline-block;
-  width: 48% !important;
+  width: 45% !important;
+  position: relative !important;
+  /* float: right !important; */
+}
+.gender-type
+{
+  display: inline-block;
+  width: 45% !important;
   position: relative !important;
   /* float: right !important; */
 }

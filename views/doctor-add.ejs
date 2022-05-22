@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+HPI - Administration Database
+</title>
+<!-- <link rel="stylesheet" type="text/css" href="pak-style.css"> -->
+<link rel="stylesheet" href="css/doctor.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+</head>
+<body>
+ 
+
+  <header>
+ 
+<nav class = "topnavbar">
+<ul class ="nav_links">
+  <li><a  href="home">HOME</a></li>
+  <li><a class="active" href="pak-stats">STATISTICS</a></li>
+  <li><a href="contact">CONTACT</a></li>
+</ul>
+</nav>
+</header>
+<br>
+<div class="sidebar">
+<ul>
+<li><a href="patient-add"><i class="fas fa-user-injured"></i>Patient</a></li>
+<li class= "active-ul"><a href="doctor-add"><i class="fas fa-user-md"></i>Doctor</a></li>
+<li><a href="quarantine-add"><i class="fas fa-building"></i>Quarantine Ward</a></li>
+<li><a href="isolation-add"><i class="fas fa-procedures"></i>Isolation Ward</a></li>
+<li><a href="logs"><i class="fas fa-server"></i>Logs</a></li>
+</ul>
+</div>
+
+<section class ="Form-section">
+  <div class="navbar-2">
+    <ul>
+      <li><a class="active-sub" href="doctor-add">Add Record</a></li>
+      <li><a href="doctor-delete">Delete Record</a>
+      <li><a href="doctor-update">Update Record</a>
+      <li><a href="doctor-display">Search Record</a>
+    </ul>
+  </div>
+  <br><br>
+  <h2>Add Doctor Record</h2>
+  <hr>
+
+  <form id="form1" name="form1" method="POST" action="">
+
+  <input type="text" name="id" class = "first" placeholder="Doctor ID">
+  <input type="text" name="name" class = "second" placeholder= "Full Name">
+  <input type="text" name="province" class = "first" placeholder= "Province Name">
+  <input type="text" name="city"class = "second" placeholder="City Name">
+  <input type="text" name="address" class = "third" placeholder= "Complete Address">
+  <input type="text" name="phone_no"class = "first" placeholder="Phone Number">
+  <select id="text" name="gender" class = "gender-type" placeholder ="Gender">
+    <option value="none" selected disabled hidden>
+          Select Gender
+      </option>
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+</select>
+  <input type="submit" name="submit" value="Add Record">
+
+  </form>
+</section>
+
+
+  </body>
+</html>
+
+
+

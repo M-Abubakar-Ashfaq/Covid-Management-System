@@ -1,0 +1,111 @@
+const express=require("express");
+const app=express();
+const bcrypt=require('bcrypt')
+app.set("view-engine","ejs")
+app.use(express.urlencoded({extended:false}))
+app.get('/login',(req,res)=>{
+    res.render('login.ejs')
+    
+}
+)
+app.use(express.static('views'))
+app.use('/css',express.static(__dirname+'views/css'))
+app.use('/img',express.static(__dirname+'views/images'))
+
+
+app.get('/register',(req,res)=>{
+    res.render('register.ejs')
+}
+)
+app.get('/home',(req,res)=>{
+    res.render('home.ejs')
+})
+app.get('/patient-add',(req,res)=>{
+    res.render('patient-add.ejs')
+}
+)
+app.get('/patient-delete',(req,res)=>{
+    res.render('patient-delete.ejs')
+}
+)
+app.get('/isolation-display',(req,res)=>{
+    res.render('isolation-display.ejs')
+}
+)
+app.get('/isolation-delete',(req,res)=>{
+    res.render('isolation-delete.ejs')
+}
+)
+app.get('/isolation-add',(req,res)=>{
+    res.render('isolation-add.ejs')
+}
+)
+app.get('/doctor-add',(req,res)=>{
+    res.render('doctor-add.ejs')
+}
+)
+app.get('/doctor',(req,res)=>{
+    res.render('doctor.ejs')
+}
+)
+app.get('/doctor-delete',(req,res)=>{
+    res.render('doctor-delete.ejs')
+}
+)
+app.get('/doctor-display',(req,res)=>{
+    res.render('doctor-display.ejs')
+}
+)
+app.get('/doctor-update',(req,res)=>{
+    res.render('doctor-update.ejs')
+}
+)
+app.get('/patient-display',(req,res)=>{
+    res.render('patient-display.ejs')
+}
+)
+app.post('/login',(req,res)=>{
+    res.render('login.ejs')
+}
+)
+app.get('/logs',(req,res)=>{
+    res.render('logs.ejs')
+}
+)
+app.post('/register',(req,res)=>{
+    res.render('register.ejs')
+}
+)
+
+app.get('/pak-stats',(req,res)=>{
+    res.render('pak-stats.ejs')
+})
+app.get('/quarantine-update',(req,res)=>{
+    res.render('quarantine-update.ejs')
+})
+app.get('/quarantine',(req,res)=>{
+    res.render('quarantine.ejs')
+})
+app.get('/isolation-update',(req,res)=>{
+    res.render('isolation-update.ejs')
+})
+app.get('/isolation',(req,res)=>{
+    res.render('isolation.ejs')
+})
+
+app.get('/quarantine-display',(req,res)=>{
+    res.render('quarantine-display.ejs')
+})
+app.get('/quarantine-delete',(req,res)=>{
+    res.render('quarantine-delete.ejs')
+})
+app.get('/quarantine-add',(req,res)=>{
+    res.render('quarantine-add.ejs')
+})
+app.get('/patient-update',(req,res)=>{
+    res.render('patient-update.ejs')
+})
+app.get('/contact',(req,res)=>{
+    res.render('contact.ejs')
+})
+app.listen(3000);

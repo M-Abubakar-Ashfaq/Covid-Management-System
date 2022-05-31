@@ -5,7 +5,9 @@ const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 // Welcome Page
 
-
+router.use(express.static('views'))
+router.use('/css',express.static(__dirname+'views/css'))
+router.use('/img',express.static(__dirname+'views/images'))
 
 router.get('/', forwardAuthenticated, (req, res) => res.render('home'));
 
@@ -45,6 +47,10 @@ router.get('/doctor-update', ensureAuthenticated,(req,res)=>{
 
   router.get('/patient-update', ensureAuthenticated,(req,res)=>
   res.render('patient-update'));
+
+  router.get('/home', ensureAuthenticated,(req,res)=>
+  res.render('home'));
+
 
 
 

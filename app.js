@@ -8,10 +8,10 @@ const session = require('express-session');
 const app = express();
 
 // Passport Config
-require('./config/passport')(passport);
+require('../Covid-Management-System/config/passport.js')(passport);
 
 // DB Config
-const db = require('./config/keys').mongoURI;
+const db = require('../Covid-Management-System/config/keys.js').mongoURI;
 
 // Connect to MongoDB
 mongoose
@@ -54,8 +54,8 @@ app.use(function(req, res, next) {
 });
 
 // Routes
-app.use('/', require('./routes/index.js'));
-app.use('/users', require('./routes/users.js'));
+app.use('/', require('../Covid-Management-System/Controller/routes/index.js'));
+app.use('/users', require('../Covid-Management-System/Controller/routes/users.js'));
 
 const PORT = process.env.PORT || 5000;
 

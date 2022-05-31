@@ -3,8 +3,8 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
 // Load User model
-const User = require('../models/User');
-const { forwardAuthenticated } = require('../config/auth');
+const User = require('/git/Covid-Management-System/models/User.js');
+const { forwardAuthenticated } = require('/git/Covid-Management-System/config/auth.js');
 
 // Login Page
 router.get('/login', forwardAuthenticated, (req, res) => res.render('login'));

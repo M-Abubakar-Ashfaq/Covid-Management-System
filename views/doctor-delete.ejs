@@ -12,23 +12,12 @@
    </ul>
  </div>
  <br><br>
-   <form action="doctor-display" method="POST">
+   <form action="/doctor-delete" method="delete">
      <div class="container" style = "margin-left: 21%;">
- <select id="text" name="selected_col" class = "gender-type" placeholder ="Select Attribute">
-    <option value="doctor_id" selected disabled hidden>
-          Select Attribute to Delete
-      </option>
-  <option value="doctor_id">Doctor ID</option>
-  <option value="d_name">Doctor Name</option>
-  <option value="d_phone">Phone Number</option>
-  <option value="d_address">Doctor Address</option>
-  <option value="d_gender">Gender</option>
-  <option value="d_city">Doctor City</option>
-  <option value="d_province">Doctor Province</option>
-</select>
+ 
  <div class="search-container">
    <input style="margin-left: 200px;" type="text" class = "Search-box" placeholder="Enter Value.." name="search">
-   <input  type="submit" class = "Search-button" name = "Submit-Button" value="Delete Record">
+   <input  type="submit" class = "Search-button" name = "Submit-Button" >
      </form>
      <br><br>
    </div>

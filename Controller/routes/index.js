@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { ensureAuthenticated, forwardAuthenticated } = require('/git/Covid-Management-System/config/auth.js');
-
+const doctors = require('/git/Covid-Management-System/Controller/doctors');
 
 // Welcome Page
 
@@ -9,7 +9,11 @@ router.use(express.static('views'))
 router.use('/css',express.static(__dirname+'views/css'))
 router.use('/img',express.static(__dirname+'views/images'))
 
+
 router.get('/', forwardAuthenticated, (req, res) => res.render('home'));
+
+router.post('/doctors/add', doctors.create);
+router.delete('/doctors/delete', doctors.destroy);
 
 router.get('/views/welcome',(req, res) => res.render('welcome'));
 

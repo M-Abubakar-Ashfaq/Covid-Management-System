@@ -16,12 +16,7 @@ router.get('/register', forwardAuthenticated, (req, res) => res.render('register
 
 
 
-router.get('/doctor-add',(req,res)=>
-  res.render('doctor-add'));
 
-  router.get('/login', (req,res)=>
-  res.render('login'));
-// Register
 router.post('/register', (req, res) => {
   const { name, email, password, password2 } = req.body;
   let errors = [];

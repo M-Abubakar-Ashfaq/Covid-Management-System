@@ -147,7 +147,7 @@ header {
   float: left;
 }
 .nav_links li a {
-  padding: 9px 25px;
+  
   background-color: rgb(133, 124, 133);
   cursor: pointer;
   transition: all 0.4s ease 0s;

@@ -52,14 +52,20 @@ router.get('/doctor-update', ensureAuthenticated,(req,res)=>{
   router.get('/patient-update', ensureAuthenticated,(req,res)=>
   res.render('patient-update'));
 
-  router.get('/home', ensureAuthenticated,(req,res)=>
+  router.get('/home', (req,res)=>
   res.render('home'));
 
+  router.get('/pak-stats',(req,res)=>{
+    res.render('pak-stats.ejs')
+})
 
-
-
+router.get('/contact',(req,res)=>{
+  res.render('contact.ejs')
+})
  
-
+router.get('/logs',(req,res)=>{
+  res.render('logs.ejs')
+})
 
 
 

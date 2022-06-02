@@ -40,9 +40,9 @@ exports.create = (req,res)=>{
 
 exports.destroy = (req, res)=>{
     
-   const name = req.body.search;
-    console.log(name);
-    Userdb.find({name: name})
+   const name = req.body.name;
+
+    Userdb.findByIdAndDelete({name: name})
         .then(data => {
             if(!data){
                 res.status(404).send({ message : `Cannot Delete with id ${name}. Maybe id is wrong`})
